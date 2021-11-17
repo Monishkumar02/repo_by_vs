@@ -1,0 +1,7 @@
+<img src="D:\Images\TechnipLogo.jpg">
+
+becomes:
+
+<img src="file:///D:/Images/TechnipLogo.jpg">
+
+1st line when in same disk

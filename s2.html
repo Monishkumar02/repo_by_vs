@@ -1,0 +1,190 @@
+<html>
+<head>
+	<title> WEB DEV </title>
+</head>
+<body>
+	<h1> Hi !! </h1>
+	<p> html </p>
+	<p> css </p>
+	<p> <input required="">  </p>
+	<p> <em> im slant </em> </p>
+	<p> <b> im bold </b> </p>
+	<br>       <!-- gives a empty line break-->
+	<hr>       <!-- gives a line break-->
+	<p> <abbr title="All Is well"> AIW </abbr> </p>
+	<p> click me to <a href="www.google.com"> google </a></p> <!--this will don't take to google coz we haven't done backend-->
+	<p> click me to <a href="https://www.google.com"> google </a></p> <!--this will direct to google because of the https-->
+	<p> click me to direct <a href="s1.html"> another html page </a></p>
+	<p> folow me on <a href="https://www.instagram.com/m._.onish/"> instagram </a></p>                                                    <!--this will direct to insta because of the https-->                                      
+	<p> image: </p>
+	<p align=center> <img src="mask2.jpg" width="350" height="350"> </p>
+	<p> I wish to be a proffesional <em><b>web developer</b></em> </p>
+	<code> font looks like code </code> <!-- this element makes the font looks like code-->
+	<p> <audio controls src="Perk Ad.mpeg"> </audio> </p>
+	<br> <br> 	
+	<p align=center> 
+		<video controls src="unlock.mp4" width="600" type="video/mp4">
+		</video>
+	</p>
+	<p align="center"> <iframe src="https://youtube.com/embed/F7mKD2Un65I" width="300" height="300"></iframe></p>
+	<button> I'm a <b> button </b> </button>
+	<!-- imp -->
+	<p> <input required=""> </p>
+	<!-- -->
+	<p>
+		<label for="languages"> choose a language: </label> <br> 
+		<input list="coding" id="languages" name="languages" >
+		<datalist id="coding">   <!--12112-->
+			<option value="c">
+			<option value="c++">
+			<option value="python">
+			<option value="html">
+			<option value="css">
+			<option value="js">
+			<option value="php">
+			<option value="R">
+		</datalist>
+	</p>
+	<details> 
+		<summary>touch me to summarize</summary> learn html as a pro 
+	</details><br>
+	<p align=center>
+		<table border="1"> <!--here ' border="any_number" ' actually a css but without this we can't do table in html-->
+			<thead>
+				<tr>
+					<td>language</td>
+					<td>rating</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>python</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>html</td>
+					<td>500</td>
+				</tr>
+			</tbody>
+		</table> 
+	</p>
+	<br>
+	<!-- TABLES AND FORMS-->
+	<table border="25">
+		<thead>
+			<tr>
+				<td> IMAGE </td>
+				<td> NAME  </td>
+				<td> LINK </td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> <img src="elon_musk.jfif"> </td>
+				<td> <b>ELON MUSK</b> </td>
+				<td> <a href="https://en.wikipedia.org/wiki/Elon_Musk"> About </a> </td>
+			</tr>
+			<tr>
+				<td> <img src="sundar.jfif"> </td>
+				<td> <b>SUNDAR PICHAI </b></td>
+				<td> <a href="https://en.wikipedia.org/wiki/Sundar_Pichai"> About </a> </td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<hr>
+	<input type="text" placeholder="Name"><br>
+	<input type="password" placeholder="Password"><br>
+	<input type="date"><br>
+	<input type="color"><br>
+	<input type="email" placeholder="Email"><br>
+	<input type="checkbox"><br>
+	<input type="file"><br>
+	<input type="radio"><br>
+	<input type="submit"><br>
+	<input type="submit" value="can give anything in value to display"><br><hr>
+	                          <!-- IMPORTANT- "value" - we shall give anything in value to display-->
+
+	<h2> <b>Login to do nothing !!</b> </h2>
+	<input type="text" placeholder="Name">
+	<input type="password" placeholder="Password">
+	<input type="submit">
+	<!-- the above can also be done with "for" and "id" attributes by...-->
+	<h2> <b>Login to do nothing !!</b> </h2>
+	<label for="Name"> Name: </label>
+	<input type="text" id="Name">
+	<label for="Password"> Password: </label>
+	<input type="password" id="Password">
+	<input type ="submit">
+
+	<h2> <b>Login to do nothing !!</b> </h2>
+	<form action="/sign-in-url" method="post">
+	    <label>Username: <input type="text"></label>
+	    <label>Password: <input type="password"></label>
+	    <button>Login</button>
+	</form>
+	<!-- the below code ensures that without entering proper email and password one can't submit..by simply adding required-->
+	<br><h2> <b>Login to do nothing !!</b> </h2>
+	<form action="https://www.google.com" method="get">       <!-- action-where the form send data to-->
+		<label for="Email"> Email: </label>                   <!-- method-what HTTP method(get/post)-->
+		<input type="email" id="Email" required>              <!-- default method is get(monish)-->
+		<label for="Password"> Password: </label>    
+		<input type="password" id="Password" required>
+		<input type ="submit">
+		                <!-- here we're sending request through the form to the link in "action" by submitting the form-->
+	</form> <!-- ONLY IF WE INCLUDE "form tag" , it ensures that one must fill to submit-->
+	<br> <HR>
+	<!-- ANOTHER FORM-->
+	<form>
+	  <div>
+	    <label for="name">Text Input:</label>
+	    <input type="text" id="name" placeholder="Doc Brown" >
+	  </div>
+	  <div>
+	    <label for="radio-choice-1">Choice 1</label>
+	    <input type="radio" id="radio-choice-1" name="radio" value="choice-1" >
+
+	    <label for="radio-choice-2">Choice 2</label>
+	    <input type="radio" id="radio-choice-2" name="radio" value="choice-2" >
+	    <!--the name in radio buttons should be same only then clicking another radio button, deselects the previously selected radio button-->
+	 </div>
+
+	  <div>
+	    <label for="select-choice">Select Dropdown Choice:</label>  
+	    <select id="select-choice">
+	      <option value="Dogs">Dogs</option>      <!--LIKE "datalist", use datalist than this(monish)--> 
+	      <option value="Cats">Cats</option>
+	      <option value="Both">Both</option>
+	    </select>
+	  </div>
+
+	  <div>
+	    <label for="textarea">Textarea:</label>
+	    <textarea cols="40" rows="4" id="textarea"></textarea>
+	  </div>
+
+	  <div>
+	    <label for="checkbox">Checkbox:</label>
+	    <input type="checkbox" id="checkbox" > checkbox
+	  </div>
+
+	  <div>
+	    <input type="submit" value="Submit" >
+	  </div>
+</form>  <hr>
+
+
+
+
+
+	
+	
+</body>
+<footer> 
+		<p align=center> © MONISH </p> 
+</footer>
+</html>
+
+
+	
